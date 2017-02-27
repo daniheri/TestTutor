@@ -29,15 +29,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
     }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
+    
 
     @Override
     protected void onRestart() {
         super.onRestart();
     }
-    
+
 }
