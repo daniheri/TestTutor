@@ -12,4 +12,9 @@ public class MainActivity extends AppCompatActivity {
 
         onCreateDescription();
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }
