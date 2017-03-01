@@ -44,4 +44,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onUserLeaveHint() {
         super.onUserLeaveHint();
     }
+
+    @Nullable
+    @Override
+    public ActionMode onWindowStartingActionMode(ActionMode.Callback callback, int type) {
+        return super.onWindowStartingActionMode(callback, type);
+    }
+
+    @Override
+    public boolean onCreateThumbnail(Bitmap outBitmap, Canvas canvas) {
+        return super.onCreateThumbnail(outBitmap, canvas);
+    }
 }
