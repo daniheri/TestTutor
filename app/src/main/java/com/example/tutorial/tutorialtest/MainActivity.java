@@ -1,9 +1,5 @@
 package com.example.tutorial.tutorialtest;
 
-import android.app.Activity;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ActionMode;
@@ -34,25 +30,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
     }
+    
 
     @Override
-    protected void onChildTitleChanged(Activity childActivity, CharSequence title) {
-        super.onChildTitleChanged(childActivity, title);
+    protected void onRestart() {
+        super.onRestart();
     }
 
-    @Override
-    protected void onUserLeaveHint() {
-        super.onUserLeaveHint();
-    }
-
-    @Nullable
-    @Override
-    public ActionMode onWindowStartingActionMode(ActionMode.Callback callback, int type) {
-        return super.onWindowStartingActionMode(callback, type);
-    }
-
-    @Override
-    public boolean onCreateThumbnail(Bitmap outBitmap, Canvas canvas) {
-        return super.onCreateThumbnail(outBitmap, canvas);
-    }
 }
