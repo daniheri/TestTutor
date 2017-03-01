@@ -1,8 +1,12 @@
 package com.example.tutorial.tutorialtest;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.ActionMode;
 
 public class MainActivity extends AppCompatActivity {
 
