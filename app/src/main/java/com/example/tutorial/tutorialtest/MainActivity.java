@@ -35,4 +35,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onChildTitleChanged(Activity childActivity, CharSequence title) {
         super.onChildTitleChanged(childActivity, title);
     }
+
+    @Override
+    protected void onUserLeaveHint() {
+        super.onUserLeaveHint();
+    }
 }
